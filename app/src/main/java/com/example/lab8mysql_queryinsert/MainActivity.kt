@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
         binding.btnAddStudent.setOnClickListener{
             startActivity(Intent(applicationContext,InsertActivity::class.java))
         }
+
+        binding.btnEditStudent.setOnClickListener{
+            val intent = Intent(applicationContext,ShowEditDeleteActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 

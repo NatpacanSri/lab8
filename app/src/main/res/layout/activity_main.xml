@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Student List"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="#0e0e0e" />
     <androidx.appcompat.widget.AppCompatButton
@@ -20,11 +20,24 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnAddStudent"
         android:text="Add Student"
-        android:textSize="20dp"
+        android:textSize="15sp"
         android:background="#1de425"
         android:textColor="@color/white"
         android:padding="10dp"
-        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@id/btnEditStudent"
+        android:layout_marginEnd="5dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEditStudent"
+        android:text="Edit Student"
+        android:textSize="15sp"
+        android:background="#ff9800"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
         />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
