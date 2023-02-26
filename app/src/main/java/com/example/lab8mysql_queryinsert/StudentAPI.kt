@@ -25,7 +25,7 @@ interface StudentAPI {
 
     @DELETE("std/{std_id}")
     fun deleteStudent(
-        @Path("std_id") std_id: String
+        @Path("std_id") std_id: Int
     ): Call<Student>
 
     @FormUrlEncoded
